@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import reportWebVitals from './reportWebVitals'
 import Exchanges from './pages/Exchanges'
 import NavBar from './components/NavBar'
+import ExchangeForm from './pages/ExchangeForm'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
@@ -13,6 +14,7 @@ root.render(
       <NavBar />
       <Routes>
         <Route path="/" element={<Exchanges />} />
+        <Route path="/exchange/form" element={<ExchangeForm />} />
       </Routes>
     </Router>
   </React.StrictMode>

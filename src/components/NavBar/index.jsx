@@ -3,16 +3,16 @@ import styled from 'styled-components'
 
 function NavBar() {
   return (
-    <NavWrapper>
+    <StyledNavWrapper>
       <div>
-        <NavLink to="/">Échanges</NavLink>
-        <NavLink to="/statistics">Statistiques</NavLink>
+        <StyledLink to="/">Échanges</StyledLink>
+        <StyledLink to="/statistics">Statistiques</StyledLink>
       </div>
-    </NavWrapper>
+    </StyledNavWrapper>
   )
 }
 
-const NavWrapper = styled.nav`
+const StyledNavWrapper = styled.nav`
   padding: 30px;
   display: flex;
   justify-content: space-between;
@@ -20,7 +20,7 @@ const NavWrapper = styled.nav`
   box-shadow: 0 0 10px 10px lightgray;
 `
 
-const NavLink = styled(Link)`
+const StyledLink = styled(Link)`
   margin-right: 30px;
   color: #000000;
   font-size: 20px;
